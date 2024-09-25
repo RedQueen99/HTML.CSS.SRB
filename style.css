@@ -1,0 +1,354 @@
+@keyframes color-change {
+    0% {
+        color: rgba(255, 0, 13, 0.714);
+    }
+    50% {
+        color: blueviolet;
+    }
+    100% {
+        color: rgba(255, 0, 13, 0.714);
+    }
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(temple-of-hathor.webp);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%, rgba(0, 0, 0, 0.5) 50%), url(1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    padding: 10px 20px;
+}
+
+.icon {
+    width: 200px;
+    height: 70px;
+}
+
+.logo {
+    font-size: 35px;
+    font-family: Arial, sans-serif;
+    padding-top: 10px;
+}
+
+.menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li {
+    list-style: none;
+    margin-left: 30px;
+    font-size: 14px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: azure;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover {
+    color: blueviolet;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.srch {
+    font-family: 'Times New Roman', serif;
+    width: 200px;
+    height: 40px;
+    background: transparent;
+    border: 1px solid salmon;
+    color: rgb(0, 8, 14);
+    font-size: 16px;
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+}
+
+.btn {
+    width: 100px;
+    height: 40px;
+    background: rgb(212, 237, 100);
+    border: 1px solid salmon;
+    color: rgb(0, 14, 10);
+    font-size: 15px;
+    border-radius: 0 5px 5px 0;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.content h1 {
+    font-family: 'Times New Roman', serif;
+    font-size: 50px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.content span {
+    color: rgb(12, 0, 0);
+    font-size: 65px;
+}
+
+.content .par {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial, sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+}
+
+.ch {
+    background-color: rgb(1, 1, 17);
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.ch a {
+    color: white;
+    text-decoration: none;
+}
+
+.table-container {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+table {
+    width: 80%;
+    margin: 0 auto;
+}
+
+table td {
+    padding: 10px;
+}
+
+table img {
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+.form {
+    width: 250px;
+    height: auto;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 50%, rgba(0, 0, 0, 0.8) 50%);
+    position: absolute;
+    top: 20px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.form h2 {
+    width: 220px;
+    font-family: sans-serif;
+    text-align: center;
+    color: blue;
+    font-size: 22px;
+    background-color: azure;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+.form input {
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: aliceblue;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.btmn {
+    width: 240px;
+    height: 40px;
+    background-color: blue;
+    border: none;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: antiquewhite;
+    transition: 0.4s ease;
+}
+
+.btmn:hover {
+    background-color: white;
+    color: blue;
+}
+
+.form .link {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    padding-top: 17px;
+    text-align: center;
+}
+
+.form .link a {
+    text-decoration: none;
+    color: blue;
+}
+
+.icons a {
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+}
+
+.icons a:hover {
+    color: blue;
+}
+
+.dropdown {
+    display: inline-block;
+}
+
+.dropdown button {
+    background-color: blue;
+    color: antiquewhite;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content {
+    background-color: blue;
+    min-width: 100px;
+    box-shadow: 2px 2px 5px hsla(0, 0%, 50%, 0.3);
+}
+
+.dropdown:hover .content {
+    display: block;
+}
+
+.dropdown:hover button {
+    background-color: hsl(0, 0%, 70%);
+}
+
+.dropdown a:hover {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.contact-form-container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: blueviolet;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+    height: 100px;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: blueviolet;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+    background-color: darkblue;
+}
+.gif-container {
+    text-align: center;
+    margin: 20px auto;
+}
+
+.gif {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 50%;  
+    border: 5px solid black;
+}
+
+
+
+
+
+
+
+
+
+
